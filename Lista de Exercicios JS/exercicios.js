@@ -334,11 +334,13 @@ convertMaiusculo();
 
 //------------------------- Exercício 1
 
-/*
+// Array
 
+// Exercício 1
+
+/*
 Crie um array contendo os números de 1 a 10 e exiba-os no console com
 for-of e for comum.
-
 */
 
 let arrays = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -347,8 +349,117 @@ for (const array of arrays) {
     console.log(array);
 }
 
-// Esse último ta errado
+console.log("\n");
 
-for (let counter = 0; counter < arrays; counter++) {
-    console.log(arrays);
+for (let i = 1; i <= arrays.length; i++) {
+    console.log(i);
 }
+
+
+// Exercício 6
+
+
+/*
+Crie uma função que recebe um array de números e retorna um array
+com todos os valores elevados ao quadrado.
+*/
+
+console.log("\n");
+
+let nomeDaArray = [1, 2, 3];
+let arrayVazia = [];
+
+function elevarQuadrado(nomeDaArray) {
+    for (let i = 1; i < nomeDaArray.length + 1; i++) {
+        let multiplicar = i ** 2;
+        console.log(multiplicar);
+        arrayVazia.push(multiplicar);
+    }
+}
+
+elevarQuadrado(nomeDaArray);
+
+console.log(arrayVazia);
+
+// Exercício 2
+
+/*
+Crie uma função que recebe um array de strings como parâmetro e retorne um novo array apenas com as strings acima de 5 caracteres.
+*/
+
+// 1º Passo: Declarar o Array
+
+console.log("\n");
+
+let strings = ["Alex", "Eduarda", "Ester", "Alexia", "Layza"];
+
+// 2º Passo: Declarar a varíável que terá um filtro para as palavras
+
+let string = strings.filter((palavra) => palavra.length > 5);
+console.log(string);
+
+console.log("\n");
+
+// Exercício 3
+
+/*
+Crie uma função que recebe um array de números e retorna um novo
+array com apenas os números que são maiores que a média do array do
+parâmetro.
+*/
+
+let garrafa = [12, 14, 16, 18, 20];
+function numerosMaioresQueAMedia(array) {
+    let soma = 0; // 0 => 12 => 26 
+    for (let i = 0; i < array.length; i++) { // For => looping
+        soma += array[i]; // soma = soma + array[i]
+    }
+
+    const media = soma / array.length;
+
+    console.log(media);
+
+    let comparador = garrafa.filter((numero) => numero > media);
+    console.log(comparador);
+}
+
+numerosMaioresQueAMedia(garrafa);
+
+
+// Exercício 5
+
+/*
+Crie uma função que recebe um array com os nomes dos alunos de uma
+turma, e outro array que recebe a lista de presença com os nomes. Indique quais alunos faltaram.
+*/
+/*
+let alunos = ['a', 'b', 'c', 'd', 'e'];
+let listaDePresença = ['a', 'b', 'c'];
+function Presenca (listaDePresença, alunos) {
+    let faltantes = [];
+    
+    for (let i = 0; i < alunos.length; i++) {
+        let aluno = alunos[i];
+        if (!listaDePresença.includes(aluno)) {
+            faltantes.push(aluno);
+        }
+    }
+    return faltantes;
+}
+const faltas = Presenca(alunos, listaDePresença);
+console.log(faltas);
+*/
+
+function listarFaltantes(alunos, listaPresenca) {
+    let faltantes = [];
+    for (let i = 0; i < alunos.length; i++) {
+        let aluno = alunos[i];
+        if (!listaPresenca.includes(aluno)) {
+            faltantes.push(aluno);
+        }
+    }
+    return faltantes;
+}
+const alunos = ['João', 'Maria', 'Pedro', 'Lucas', 'Ana', 'Mariana'];
+const listaPresenca = ['João', 'Maria', 'Lucas', 'Mariana'];
+const faltantes = listarFaltantes(alunos, listaPresenca); // ['Pedro', 'Ana']
