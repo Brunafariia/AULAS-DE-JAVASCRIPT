@@ -1,6 +1,6 @@
 // ---------------------------------------------Variáveis e operadores
 
-// Exercício 1
+//------------------------- Exercício 1
 
 /* 
     Crie uma variável que armazene uma temperatura em Fahrenheit, e re-
@@ -17,7 +17,7 @@ let convert = (Fahrenheit - 32) / 1.8;
 
 console.log(convert.toFixed(2));
 
-// Exercício 2
+// -------------------------Exercício 2
 
 /* 
     Crie duas variáveis nome e sobrenome. Crie uma nova variável chamada
@@ -46,7 +46,7 @@ console.log(`Meu nome é ${nome} ${sobrenome}`);
 
 console.log("Meu nome é", nome, sobrenome);
 
-// Exercício 3
+//------------------------- Exercício 3
 
 /*
     Crie cinco variáveis que representam cinco notas de um estudante. Cal-
@@ -67,7 +67,7 @@ let media = (nota1 + nota2 + nota3 + nota4 + nota5) / 5;
 
 console.log(`A nota final é ${media}`);
 
-// Exercício 4
+//------------------------- Exercício 4
 
 /*
     Crie duas variáveis que representam as dimensões (em km) de um ter-
@@ -87,7 +87,7 @@ let conversao = area * 100;
 
 console.log(conversao);
 
-// Exercício 5
+//----------------------------- Exercício 5
 
 /*
     Crie uma variável que armazena uma temperatura em Kelvin. Converta
@@ -105,7 +105,7 @@ console.log(conversaoCelKel);
 
 // ---------------------------------------------Estruturas Condicionais
 
-// Exercício 1
+//------------------------- Exercício 1
 
 /*
 
@@ -129,7 +129,7 @@ if (a > b && a > c) {
     console.log(`a variável C é a maior`);
 }
 
-// Exercício 2
+// ------------------------------------------ Exercício 2
 
 /*
 
@@ -155,7 +155,7 @@ if ((lado1 + lado2) > lado3) {
     console.log(`A somatória dos lados 3 e 1 são maiores que o lado 2, pois ${lado3} + ${lado1} é igual a ${lado3 + lado1}`);
 }
 
-// Exercício 3
+//------------------------- Exercício 3
 
 /*
     Crie uma variável idade. Caso seja uma idade inválida (negativa ou maior
@@ -171,7 +171,7 @@ if (idade < 0 || idade > 130) {
 
 // --------------------------------------------- Estruturas de seleção
 
-// Exercício 1
+//------------------------- Exercício 1
 
 /*
     Defina uma variável para armazenar um caractere e determine se é uma
@@ -208,7 +208,7 @@ switch (letra) {
 
 // ---------------------------------------------Estruturas de repetição
 
-// Exercício 1
+//-------------------------------------------------- Exercício 1
 
 /*
     Use um laço while para imprimir na tela todos os números pares de 2 a
@@ -226,7 +226,7 @@ while (numero <= 10) {
 
 }
 
-// Exercício 2
+//------------------------- Exercício 2
 
 /*
     Use um laço for para imprimir na tela a tabuada do 7 (de 1 a 10).
@@ -242,7 +242,7 @@ for (numeroFixo = 1; numeroFixo <= 10; numeroFixo++) {
 
 // --------------------------------------------- Funções
 
-// Exercício 1
+//------------------------- Exercício 1
 
 /*
     Escreva uma função que receba um número e retorne seu dobro.
@@ -258,7 +258,7 @@ for (numeroFixo = 1; numeroFixo <= 10; numeroFixo++) {
 
 
 
-// Exercício 2
+//-------------------------------------------------- Exercício 2
 
 /*
     Escreva uma função que receba uma palavra e um número. Retorne a
@@ -302,7 +302,7 @@ multiplicar(25);
 
 // --------------------------------------------- Strings 
 
-// Exercício 1
+// --------------------------------------------------Exercício 1
 
 /*
 
@@ -319,7 +319,7 @@ function contador() {
 
 contador();
 
-// Exercício 2
+//------------------------- Exercício 2
 
 // Escreva uma função que receba uma string e retorne a mesma string em letras maiúsculas
 
@@ -332,7 +332,7 @@ convertMaiusculo();
 
 // ---------------------------------------------Array
 
-// Exercício 1
+//------------------------- Exercício 1
 
 /*
 
